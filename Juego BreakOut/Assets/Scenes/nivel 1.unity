@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   - component: {fileID: 330585550}
+  - component: {fileID: 330585551}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -436,6 +437,27 @@ MonoBehaviour:
   textoPuntajeAlto: {fileID: 0}
   textoActual: {fileID: 0}
   puntajeAltoSO: {fileID: 11400000, guid: e3623de346e9e0d4c996cd6faadcc075, type: 2}
+--- !u!114 &330585551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3437028ba335e45bbfd1b4f3992c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radio: 1
+  mantenerEnPantalla: 0
+  estaEnPantalla: 1
+  anchoCamara: 0
+  altoCamara: 0
+  salioDerecha: 0
+  salioIzquierda: 0
+  salioArriba: 0
+  salioAbajo: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +975,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &950016566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6458364846286160062, guid: 10acce06749c83f468963b3946438a35, type: 3}
+  m_PrefabInstance: {fileID: 1832389169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &950016573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950016566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3437028ba335e45bbfd1b4f3992c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radio: 1
+  mantenerEnPantalla: 0
+  estaEnPantalla: 0
+  anchoCamara: 0
+  altoCamara: 0
+  salioDerecha: 0
+  salioIzquierda: 0
+  salioArriba: 0
+  salioAbajo: 0
 --- !u!1 &969211829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1465,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4463273190141051866, guid: 10acce06749c83f468963b3946438a35, type: 3}
+      propertyPath: velocidadBola
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5912549745071239022, guid: 10acce06749c83f468963b3946438a35, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1464,7 +1516,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6458364846286160062, guid: 10acce06749c83f468963b3946438a35, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 950016573}
   m_SourcePrefab: {fileID: 100100000, guid: 10acce06749c83f468963b3946438a35, type: 3}
 --- !u!1 &1913165512
 GameObject:
@@ -1878,6 +1933,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resistencia: 1
+  AumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &6644110136284315716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,6 +2014,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resistencia: 1
+  AumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -8,5 +8,9 @@ public class Bloque_Metal : Bloque
         resistencia = 8;
     }
 
+    public override void RebotarBola(Collision collision)
+    {
+        base.RebotarBola(collision);
+    }
 
 }

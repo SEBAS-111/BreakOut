@@ -17,6 +17,16 @@ public class jugador : MonoBehaviour
         Transform = this.gameObject.transform;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bola")
+        {
+            Vector3 direccion = collision.contacts[0].point - transform.position;
+            direccion = direccion.normalized;
+            collision.rigidbody.linearVelocity = collision.gameObject.GetComponent<bola>().velocidadBola * direccion;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
