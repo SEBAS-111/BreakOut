@@ -5,7 +5,9 @@ using UnityEngine.Events;
 public class Bloque : MonoBehaviour
 {
     public int resistencia = 1;
+    public Opciones opciones;
     public UnityEvent AumentarPuntaje;
+
 
     public void OnCollisionEnter(Collision collision)
     {
@@ -26,7 +28,18 @@ public class Bloque : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        switch (opciones.NivelDificultad)
+        {
+            case Opciones.Dificultad.facil:
+                resistencia = 100;
+                break;
+            case Opciones.Dificultad.normal:
+                resistencia = 200;
+                break;
+            case Opciones.Dificultad.dificil:
+                resistencia = 300;
+                break;
+        }
     }
 
     // Update is called once per frame
