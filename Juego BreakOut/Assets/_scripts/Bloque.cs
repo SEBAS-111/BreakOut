@@ -26,18 +26,18 @@ public class Bloque : MonoBehaviour
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void CambioResistencia(int facil, int normal, int dificil)
     {
-        switch (opciones.NivelDificultad)
+        switch (this.opciones.NivelDificultad)
         {
             case Opciones.Dificultad.facil:
-                resistencia = 100;
+                this.resistencia = 1;
                 break;
             case Opciones.Dificultad.normal:
-                resistencia = 200;
+                this.resistencia = 2;
                 break;
             case Opciones.Dificultad.dificil:
-                resistencia = 300;
+                this.resistencia = 3;
                 break;
         }
     }

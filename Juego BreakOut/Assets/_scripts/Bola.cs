@@ -13,6 +13,7 @@ public class bola : MonoBehaviour
     Vector3 ultimaPosicion = Vector3.zero;
     Vector3 direccion = Vector3.zero;
     Rigidbody rigidbody;
+    public Opciones opciones;
     private ControlBorde control;
     public UnityEvent BolaDestruida;
 
@@ -80,7 +81,23 @@ public class bola : MonoBehaviour
                 isGameStarted = true;
                 this.transform.SetParent(null);
                 GetComponent<Rigidbody>().linearVelocity = velocidadBola * Vector3.up;
+
             }
+        }
+    }
+    public void CambioVelocidad(int facil, int normal, int dificil)
+    {
+        switch (this.opciones.NivelDificultad)
+        {
+            case Opciones.Dificultad.facil:
+                this.velocidadBola = 25;
+                break;
+            case Opciones.Dificultad.normal:
+                this.velocidadBola = 30;
+                break;
+            case Opciones.Dificultad.dificil:
+                this.velocidadBola = 35;
+                break;
         }
     }
 

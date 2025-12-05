@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "opciones", menuName = "Herramientas/opciones", order = 1)]
 public class Opciones : PuntajePersistente
 {
-    public float velocidadBola = 30;
+    public float velocidadBola = 25;
     public Dificultad NivelDificultad = Dificultad.facil;
 
     public enum Dificultad
@@ -16,6 +16,7 @@ public class Opciones : PuntajePersistente
 
     public void CambiarVelocidad(float nuevaVelocidad)
     {
+
         velocidadBola = nuevaVelocidad;
     }
 
