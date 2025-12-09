@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGameStarted: 0
   velocidadBola: 25
+  opciones: {fileID: 11400000, guid: d9b04a1d8a03b734196278096aabbb42, type: 2}
   BolaDestruida:
     m_PersistentCalls:
       m_Calls:

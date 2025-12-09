@@ -6,7 +6,7 @@ public class Bloque_Vidrio : Bloque
     void Start()
     {
         CambioResistencia(2, 4, 6);
-        resistencia = 2;
+        
     }
 
     public override void RebotarBola(Collision collision)

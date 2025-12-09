@@ -31,13 +31,13 @@ public class Bloque : MonoBehaviour
         switch (this.opciones.NivelDificultad)
         {
             case Opciones.Dificultad.facil:
-                this.resistencia = 1;
+                this.resistencia = facil;
                 break;
             case Opciones.Dificultad.normal:
-                this.resistencia = 2;
+                this.resistencia = normal;
                 break;
             case Opciones.Dificultad.dificil:
-                this.resistencia = 3;
+                this.resistencia = dificil;
                 break;
         }
     }

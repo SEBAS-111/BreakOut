@@ -5809,6 +5809,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d9b04a1d8a03b734196278096aabbb42, type: 2}
     - target: {fileID: 4463273190141051866, guid: 10acce06749c83f468963b3946438a35, type: 3}
+      propertyPath: isGameStarted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463273190141051866, guid: 10acce06749c83f468963b3946438a35, type: 3}
       propertyPath: BolaDestruida.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2060049671}

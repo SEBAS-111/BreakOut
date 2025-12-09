@@ -20,6 +20,8 @@ public class bola : MonoBehaviour
     private void Awake()
     {
         control = GetComponent<ControlBorde>();
+        Cambiovelocidad(25, 30, 35);
+
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -85,18 +87,18 @@ public class bola : MonoBehaviour
             }
         }
     }
-    public void CambioVelocidad(int facil, int normal, int dificil)
+    public void Cambiovelocidad(int facil, int normal, int dificil)
     {
         switch (this.opciones.NivelDificultad)
         {
             case Opciones.Dificultad.facil:
-                this.velocidadBola = 25;
+                this.velocidadBola = facil;
                 break;
             case Opciones.Dificultad.normal:
-                this.velocidadBola = 30;
+                this.velocidadBola = normal;
                 break;
             case Opciones.Dificultad.dificil:
-                this.velocidadBola = 35;
+                this.velocidadBola = dificil;
                 break;
         }
     }

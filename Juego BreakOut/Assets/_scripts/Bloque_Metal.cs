@@ -6,7 +6,7 @@ public class Bloque_Metal : Bloque
     void Start()
     {
         CambioResistencia(8, 16, 24);
-        resistencia = 8;
+        
     }
 
     public override void RebotarBola(Collision collision)

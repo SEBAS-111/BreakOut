@@ -6,7 +6,7 @@ public class Bloque_Piedra : Bloque
     void Start()
     {
         CambioResistencia(5, 10, 15);
-        resistencia = 5;
+        
     }
 
     public override void RebotarBola(Collision collision)
